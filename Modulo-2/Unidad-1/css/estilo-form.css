@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #c3a570;
-  background: -moz-linear-gradient(180deg, #8b6540 35%, #c3a570 100%));
+  background: -moz-linear-gradient(180deg, #8b6540 35%, #c3a570 100%);
   background: -webkit-linear-gradient(180deg, #8b6540 35%, #c3a570 100%);
   background: linear-gradient(180deg, #8b6540 35%, #c3a570 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3a570",endColorstr="#8b6540",GradientType=1);
@@ -12,17 +12,26 @@ body {
 form {
   width  : 300px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 5px;
   background-color: white;
   color: #2b3846;
+  box-shadow: 10px 10px 17px 1px #2b3846bf;
+  -webkit-box-shadow: 10px 10px 17px 1px #2b3846bf;
+  -moz-box-shadow: 10px 10px 17px 1px #2b3846bf;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.1em;
 }
 
 input {
-  width: 97%;
+  width: 100%;
   padding: 5px;
   border: 2px solid #1f3f61;
   border-radius: 10px;
+  color: #2b3846;
 }
 
 input[type=submit],
