@@ -1,0 +1,19 @@
+input {
+    border: 1px dashed #4393a3;
+    border-radius: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 150px;
+    margin: 0;
+}
+
+  form {
+    position: relative;
+    margin: 0 auto;
+    padding: 2em;
+    width  : 750px;
+  }

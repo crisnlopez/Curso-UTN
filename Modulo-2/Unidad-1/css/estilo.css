@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #2b3846;
+}
+
+body {
+    width: 80%;
+    max-width: 1020px;
+    height: 100vh;
+    margin: 2rem auto;
+    line-height: 1.5em; 
+    background: #c3a570;
+    background: -moz-linear-gradient(180deg, #c3a570 35%, #8b6540 100%);
+    background: -webkit-linear-gradient(180deg, #c3a570 35%, #8b6540 100%);
+    background: linear-gradient(180deg, #c3a570 35%, #8b6540 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3a570",endColorstr="#8b6540",GradientType=1);
+}
+
+img {
+    max-height: 280px;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+section {
+    margin: 1.3rem 0;
+}
+
+/* Fuentes */
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p,li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Diseño */
+
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1em;
+    border: 3px solid #4393a3c7;
+    border-radius: 2em;
+    column-count: 3;
+    column-gap: 1em;
+    column-rule: 2.5px solid #4393a3c7;
+}
+
+section h3 {
+    font-size: 1.7em;
+    margin-bottom: .5rem;
+    column-span: all;
+    text-align: center;
+}
