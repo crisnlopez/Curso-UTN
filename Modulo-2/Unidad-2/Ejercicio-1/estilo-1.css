@@ -1,0 +1,29 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    color: white;
+    line-height: 200px;
+    text-align: center;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
