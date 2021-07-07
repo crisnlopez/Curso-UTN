@@ -38,6 +38,10 @@ aside {
 }
 
 @media (max-width: 800px) {
+	#contenedor {
+		max-width: 100%;
+	}
+	
 	nav,
 	section,
 	aside {
