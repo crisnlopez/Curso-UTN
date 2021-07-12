@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog De Comida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="d-flex flex-wrap justify-content-center py-4 bg-dark border-bottom border-primary border-3 fixed-top">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4 text-white">El blog de Pepe</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Recetas</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+        </ul>
+    </header>
+
+    <section class="mt-5 py-5 text-center bg-secondary border-bottom border-primary border-5">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-primary text-warning">Apasionados de la cocina</h1>
+            <p class="my-5 m-auto w-75 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatibus. Omnis eligendi sed asperiores enim aspernatur, excepturi qui, iure dicta tempora expedita voluptatibus quia temporibus id praesentium architecto eum, aperiam deserunt quis exercitationem. Doloribus error quo, aut excepturi tempore sapiente nesciunt nihil magni! Nam, recusandae culpa sapiente amet labore voluptatem! Cupiditate aspernatur quod et culpa amet dolore maiores eveniet quasi.</p>
+            <p>
+              <a href="#" class="btn btn-lg btn-warning my-2">Iniciar Sesión</a>
+              <a href="#" class="btn btn-lg btn-outline-warning my-2">Registrarse</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <main class="py-5 bg-dark">
+
+        <div class="container border-bottom border-4 border-warning">
+              <div class="py-5 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="/img/Carne.jpg" alt="Rica Carne">
+        
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">15 mins</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/img/Ensalada.jpg" alt="Rica Ensalada">
+          
+                      <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nisi. Impedit excepturi consequuntur sint eos?</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-muted">33 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/img/Pasta.jpg" alt="Rica Pasta">
+          
+                      <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem rem inventore dolores?</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-muted">46 mins</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="container mt-5">
+            <h2 class="mb-4 py-2 text-white text-center">Complete el siguiente formulario para recibir las ultimas novedades!!</h2>
+            <form class="p-3 bg-secondary border border-4 border-primary rounded">
+                <div class="row mb-4">
+
+                    <div class="col col-6">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+
+                    <div class="col col-6">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+
+                </div>
+
+                <div class="row mb-4">
+
+                    <div class="col col-12">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                    </div>
+
+                </div>
+
+                <fieldset class="row m-auto mb-3 bg-danger rounded-bottom">
+                    <legend class="text-white col-form-label col-sm-2 pt-0">Frecuencia para recibir novedades</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label text-white" for="gridRadios1">
+                          Semanal
+                        </label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label text-white" for="gridRadios2">
+                          Quincenal
+                        </label>
+                      </div>
+                      
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option2">
+                        <label class="form-check-label text-white" for="gridRadios3">
+                          Mensual
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
