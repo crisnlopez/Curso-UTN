@@ -156,12 +156,61 @@ footer {
     font-size: .7rem;
     color: #444;
 }
+
+/* Servicios */
+
+.Card-servicios {   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: .7em;
+}
+
+.Card-servicios:nth-child(even) {
+    flex-direction: row;
+}
+
+.Card-servicios + .Card-servicios {
+    margin-top: 1em;
+}
+
+.Card-servicios .Info-servicios {
+    width: 70%;
+    margin: 0 .5em;
+}
+
+.Card-servicios h4 {
+    margin: 0 0 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #2e64a1;
+    color: #2e64a1;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.Card-servicios p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+.Card-servicios img {
+    border-radius: .8em;
+}
+
 /* Media Queries */
 
 @media (max-width:650px) {
 
+    /* General */
     .holder {
         width: 90%;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     nav ul li {
@@ -171,11 +220,17 @@ footer {
     .columnas {
         flex-direction: column;
     }
-    
+
+    /* Home */
     .bienvenidos,
     .testimonios {
         margin: 0 auto;
         padding: 0;
+    }
+
+    /* Nosotros */
+    .historia p {
+        text-align: center;
     }
 
     .Card-persona {
@@ -187,4 +242,19 @@ footer {
         margin-left: auto;
     }
     
+    /* Servicios */
+    .Card-servicios,
+    .Card-servicios:nth-child(even) {
+        margin: 1em auto;
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .Card-servicios img {
+        margin: 0 auto;
+    }
+
+    .Card-servicios .Info-servicios {
+        margin: 1em auto 0;
+    }
 }
