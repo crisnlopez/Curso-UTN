@@ -59,6 +59,8 @@ nav ul li a.activo {
 
 h2 {
     color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
 }
 
 footer {
@@ -109,9 +111,58 @@ footer {
     margin: 1em 0;
 }
 
+/* Nosotros */
+
+.historia p {
+    font-size: .85rem;
+}
+
+.Card-persona {
+    border: 1px solid gray;
+    border-radius: .25em;
+    text-align: center;
+}
+
+.Card-persona + .Card-persona {
+    margin-left: 1em;
+}
+
+.Card-persona img {
+    margin: .8em 0 1em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    max-width: 70%;
+}
+
+.Card-persona h5,
+.Card-persona h6 {
+    font-weight: normal;
+    color: #2e64a1;
+    margin: 0;
+}
+
+.Card-persona h5 {
+    font-size: .9rem;
+}
+
+.Card-persona h6 {
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.Card-persona p {
+    margin: 0 1em 1em;
+    font-size: .7rem;
+    color: #444;
+}
 /* Media Queries */
 
 @media (max-width:650px) {
+
+    .holder {
+        width: 90%;
+    }
+
     nav ul li {
         min-width: 100%;
     }
@@ -125,4 +176,14 @@ footer {
         margin: 0 auto;
         padding: 0;
     }
+
+    .Card-persona {
+        margin: .6em auto;
+        max-width: 400px;
+    }
+
+    .Card-persona + .Card-persona {
+        margin-left: auto;
+    }
+    
 }
