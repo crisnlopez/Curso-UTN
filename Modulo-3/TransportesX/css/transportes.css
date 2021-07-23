@@ -200,6 +200,20 @@ footer {
     border-radius: .8em;
 }
 
+/* Galeria */
+.Galeria-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.Galeria-Container .Galeria-foto {
+    max-width: 20%;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: .3em;
+}
+
 /* Media Queries */
 
 @media (max-width:650px) {
@@ -256,5 +270,14 @@ footer {
 
     .Card-servicios .Info-servicios {
         margin: 1em auto 0;
+    }
+
+    /* Galeria */
+    .Galeria-Container {
+        justify-content: center;
+    }
+
+    .Galeria-Container .Galeria-foto {
+        max-width: 35%;
     }
 }
