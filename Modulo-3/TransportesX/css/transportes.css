@@ -71,7 +71,7 @@ footer {
     text-align: center;
 }
 
-/* Layout */
+/* //--Layout--// */
 .holder {
     width: 95%;
     max-width: 960px;
@@ -80,6 +80,7 @@ footer {
 
 .columnas{
     display: flex;
+    justify-content: space-around;
 }
 
 /* Home */
@@ -208,12 +209,65 @@ footer {
 }
 
 .Galeria-Container .Galeria-foto {
-    max-width: 20%;
+    max-width: 16%;
     margin: 1em 0 1em 2.5%;
     border: 1px solid #ddd;
     padding: .3em;
 }
 
+/* Novedades */
+
+/* Contacto */
+.Formulario-Container {
+    flex-grow: 2;
+    max-width: 50%;
+    padding: .6em;
+    border-right: 1px solid gray;
+}
+
+.Contacto-Container p {
+    font-size: .9rem;
+}
+
+.Contacto-Container ul li {
+    font-size: .8rem;
+}
+
+.formulario label {
+    display: inline-block;
+    margin-right: 1.2em;
+    width: 20%;
+    vertical-align: top;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 70%;
+    padding: .4em 0 .6em;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: .8em;
+}
+
+.formulario input[type="submit"] {
+    width: auto;
+    padding: .4em;
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formulario textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.formulario .acciones {
+    text-align: center;
+}
 /* Media Queries */
 
 @media (max-width:650px) {
@@ -279,5 +333,12 @@ footer {
 
     .Galeria-Container .Galeria-foto {
         max-width: 35%;
+    }
+    /* Novedades */
+
+    /* Contacto */
+    .Formulario-Container {
+        max-width: 100%;
+        border-right: none;
     }
 }
