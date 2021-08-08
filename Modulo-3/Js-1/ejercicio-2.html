@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script type="text/javascript">
+        var numeros = [23442,1.2,3123,20,-152,15.2,-153.33]
+        function mayorMenor(nums) {
+            var mayor = 0;
+            for(var i = 0; i < nums.length; i++) {
+                if (mayor < nums[i]) {
+                    mayor = nums[i];
+                }
+            }
+           return console.log("El mayor es " + mayor)
+        }
+    </script>
+</head>
+<body>
+    <p>En la consola usar la funcion mayorMenor(nums) pasando el array "numeros" como argumento</p>
+</body>
+</html>

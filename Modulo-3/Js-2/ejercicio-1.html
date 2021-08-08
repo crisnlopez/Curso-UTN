@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-1</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        input {
+            padding: 1.5em;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <input type="button" value="red" id="btnRed" onclick="cambiarColor('red')">
+    <input type="button" value="blue" id="btnBlue" onclick="cambiarColor('blue')">
+    <input type="button" value="yellow" id="btnYellow" onclick="cambiarColor('yellow')">
+    <input type="button" value="default" id="btnDefault" onclick="cambiarColor()">
+
+    <script>
+        var btnRed = document.getElementById('btnRed');
+        var btnRed = document.getElementById('btnBlue');
+        var btnRed = document.getElementById('Yellow');
+        var btnRed = document.getElementById('btnDefault');
+        var body = document.querySelector('body');
+
+        function cambiarColor(color) {
+            let clr = color;
+
+            if(clr == 'red') {
+                body.style.background = 'red';
+            }  else if (clr == 'blue') {
+                body.style.background = 'blue';
+            } else if (clr == 'yellow') {
+                body.style.background = 'yellow'
+            } else {
+                body.style.background = 'white'
+            }
+        }
+        
+    </script>
+</body>
+</html>
