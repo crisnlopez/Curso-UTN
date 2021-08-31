@@ -1,0 +1,344 @@
+/* Global */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+header {
+    background-color: #2e65a1;
+    padding: 2em 0;
+}
+
+header h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+nav {
+    margin-bottom: 2em;
+    background-color: #6da9ed;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    min-width: 16.6%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .2em 0em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul li a.activo {
+    background-color: #4c76a5;
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 3em 0;
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+}
+
+/* //--Layout--// */
+.holder {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.columnas{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Home */
+
+.homeimg{
+    margin-bottom: 1.5em;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 1em;
+}
+
+.testimonio .cita{
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.testimonio .autor {
+    display: block;
+    font-size: .7rem;
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* Nosotros */
+
+.historia p {
+    font-size: .85rem;
+}
+
+.Card-persona {
+    border: 1px solid gray;
+    border-radius: .25em;
+    text-align: center;
+}
+
+.Card-persona + .Card-persona {
+    margin-left: 1em;
+}
+
+.Card-persona img {
+    margin: .8em 0 1em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    max-width: 70%;
+}
+
+.Card-persona h5,
+.Card-persona h6 {
+    font-weight: normal;
+    color: #2e64a1;
+    margin: 0;
+}
+
+.Card-persona h5 {
+    font-size: .9rem;
+}
+
+.Card-persona h6 {
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.Card-persona p {
+    margin: 0 1em 1em;
+    font-size: .7rem;
+    color: #444;
+}
+
+/* Servicios */
+
+.Card-servicios {   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: .7em;
+}
+
+.Card-servicios:nth-child(even) {
+    flex-direction: row;
+}
+
+.Card-servicios + .Card-servicios {
+    margin-top: 1em;
+}
+
+.Card-servicios .Info-servicios {
+    width: 70%;
+    margin: 0 .5em;
+}
+
+.Card-servicios h4 {
+    margin: 0 0 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #2e64a1;
+    color: #2e64a1;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.Card-servicios p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+.Card-servicios img {
+    border-radius: .8em;
+}
+
+/* Galeria */
+.Galeria-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.Galeria-Container .Galeria-foto {
+    max-width: 16%;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    padding: .3em;
+}
+
+/* Novedades */
+
+/* Contacto */
+.Formulario-Container {
+    flex-grow: 2;
+    max-width: 50%;
+    padding: .6em;
+    border-right: 1px solid gray;
+}
+
+.Contacto-Container p {
+    font-size: .9rem;
+}
+
+.Contacto-Container ul li {
+    font-size: .8rem;
+}
+
+.formulario label {
+    display: inline-block;
+    margin-right: 1.2em;
+    width: 20%;
+    vertical-align: top;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 70%;
+    padding: .4em 0 .6em;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: .8em;
+}
+
+.formulario input[type="submit"] {
+    width: auto;
+    padding: .4em;
+    background-color: #6da9ed;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formulario textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.formulario .acciones {
+    text-align: center;
+}
+/* Media Queries */
+
+@media (max-width:650px) {
+
+    /* General */
+    .holder {
+        width: 90%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    nav ul li {
+        min-width: 100%;
+    }
+
+    .columnas {
+        flex-direction: column;
+    }
+
+    /* Home */
+    .bienvenidos,
+    .testimonios {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Nosotros */
+    .historia p {
+        text-align: center;
+    }
+
+    .Card-persona {
+        margin: .6em auto;
+        max-width: 400px;
+    }
+
+    .Card-persona + .Card-persona {
+        margin-left: auto;
+    }
+    
+    /* Servicios */
+    .Card-servicios,
+    .Card-servicios:nth-child(even) {
+        margin: 1em auto;
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .Card-servicios img {
+        margin: 0 auto;
+    }
+
+    .Card-servicios .Info-servicios {
+        margin: 1em auto 0;
+    }
+
+    /* Galeria */
+    .Galeria-Container {
+        justify-content: center;
+    }
+
+    .Galeria-Container .Galeria-foto {
+        max-width: 35%;
+    }
+    /* Novedades */
+
+    /* Contacto */
+    .Formulario-Container {
+        max-width: 100%;
+        border-right: none;
+    }
+}
