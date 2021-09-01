@@ -1,1 +1,36 @@
-<h1>Pagina de contacto</h1>
+<div class="columnas">
+    <section class="Formulario-Container">
+        <h2>Contacto Rápido</h2>
+        <form action="/contacto" method="post" class="formulario">
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="tel">
+            </p>
+            <p>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </p>
+            <p class="acciones"><input type="submit" value="Enviar"></p>
+        </form>
+        {{message}}
+    </section>
+    <section class="Contacto-Container">
+        <h2>Otras vias de contacto</h2>
+        <p>También se pueden comunicar con nosotros ...</p>
+        <ul>
+            <li>Teléfono: 4578-7894</li>
+            <li>Email:contacto@transportesX.com.ar</li>
+            <li>Facebook:</li>
+            <li>Twitter:</li>
+            <li>Skype:</li>
+        </ul>
+    </section>
+</div>

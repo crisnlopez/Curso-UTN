@@ -1,21 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <nav>
-      <h2>Ejemplo ruteo</h2>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/nosotros">Nosotros</a></li>
-        <li><a href="/servicios">Servicios</a></li>
-        <li><a href="/galeria">Galeria</a></li>
-        <li><a href="/novedades">Novedades</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-      </ul>
-    </nav>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Transportes 2021 - 2 cuatrimestre</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/transportes.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="holder">
+      <img src="images/logo.png" width="100" alt="Transportes X">
+      <h1>Transportes X</h1>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/" class="{{#if isHome}}activo{{/if}}">Home</a></li>
+      <li><a href="/nosotros" class="{{#if isNosotros}}activo{{/if}}">Nosotros</a></li>
+      <li><a href="/servicios" class="{{#if isServicios}}activo{{/if}}">Servicios</a></li>
+      <li><a href="/galeria" class="{{#if isGaleria}}activo{{/if}}">Galeria</a></li>
+      <li><a href="/novedades" class="{{#if isNovedades}}activo{{/if}}">Novedades</a></li>
+      <li><a href="/contacto" class="{{#if isContacto}}activo{{/if}}">Contacto</a></li>
+    </ul>
+  </nav>
+  <main class="holder">
     {{{body}}}
-  </body>
+  </main>
+  <footer>
+    <p>
+      Diseñado por Cristian Nahuel Lopez - &copy;2021
+    </p>
+  </footer>
+</body>
 </html>
