@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+
 // //---Armando Router--//
 var indexRouter = require('./routes/index'); // index.js
 // var usersRouter = require('./routes/users');
