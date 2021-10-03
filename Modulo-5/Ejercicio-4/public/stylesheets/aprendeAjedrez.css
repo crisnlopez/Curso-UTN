@@ -1,0 +1,123 @@
+/* //Global */
+.holder {
+    max-width: 90%;
+}
+
+body {
+    background-image: url(/images/background/Piezas-ajedrez-medium.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+/* // Layout // */
+.Conteiner-nivel h2 {
+    margin: 1.5rem auto 1rem;
+    max-width: 850px;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    background-color: var(--negroTransparente);
+    border-radius: .5rem;
+}
+
+.Conteiner-nivel h2:hover {
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+    box-shadow: 0px 3px var(--negro), 3px 5px var(--negro);
+    transition: .2s;
+}
+
+.Conteiner-nivel h2 span {
+
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.Tarjeta-nivel {
+    margin: 1.5rem auto 2rem;
+    max-width: 453px;
+    padding: 2.2rem 1.6rem;
+    background-color: var(--negroTransparente);
+    border-radius: 1rem;
+    box-shadow: 0px 7px var(--negro), 7px 7px var(--negro);
+    transition: 1s;
+}
+
+.Tarjeta-nivel:hover {
+    background: var(--negro);
+    box-shadow: 0px 7px var(--negro);
+    transition: 1s;
+}
+
+.Tarjeta-nivel a,
+div.Contenido-nivel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.Contenido-principal{
+    margin-bottom: 1.5rem;
+}
+
+h3.Subtitulo-nivel {
+    margin: 1.2rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+p.Parrafo-nivel {
+    margin: 0;
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+div.Contenido-extra {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+}
+
+div.extra-info {
+    font-size: 1.15rem;
+}
+
+span.fas::before {
+    font-size: 1.45rem;
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .Tarjeta-nivel {
+        max-width: 728px;
+        padding: 2.2rem;
+    }
+
+    .Tarjeta-nivel a {
+        flex-wrap: nowrap;
+    }
+
+    .Tarjeta-nivel a img {
+        max-width: 261px;
+        margin-right: 1.5rem;
+    }
+
+    div.Contenido-principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    h3.Subtitulo-nivel {
+        margin: 0 0 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    p.Parrafo-nivel {
+        font-size: 1.1rem;
+    }
+}

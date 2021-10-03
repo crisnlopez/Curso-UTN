@@ -1,1 +1,24 @@
-<h1>soy contacto</h1>
+<div class="contenedor">
+    <form action="/contacto" method="post" class="form">
+        <div class="form-header">
+            <h1 class="form-title">C<span>ontacto</span></h1>
+        </div>
+
+        <label for="nombre" class="form-label">Nombres:</label>
+        <input type="text" name="nombre" id="nombre" class="form-input" placeholder="Escriba su nombre">
+
+        <label for="direccion" class="form-label">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" class="form-input" placeholder="Escriba su dirección">
+
+        <label for="correo" class="form-label">Correo:</label>
+        <input type="email" name="correo" id="correo" class="form-input" placeholder="Escriba su correo">
+
+        <label for="telefono" class="form-label">Teléfono:</label>
+        <input type="text" name="telefono" id="telefono" class="form-input" placeholder="Escriba su teléfono">
+
+        <label for="mensaje" class="form-label">Mensaje:</label>
+        <input type="text" name="mensaje" id="mensaje" class="form-texarea" placeholder="Aquí escriba su mensaje">
+
+        <input type="submit" class="btn-submit" value="Enviar consulta">
+    </form>
+</div>

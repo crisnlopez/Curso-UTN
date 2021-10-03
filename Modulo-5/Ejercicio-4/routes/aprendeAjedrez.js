@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('aprendeAjedrez');
+  res.render('aprendeAjedrez', {
+    style: '/aprendeAjedrez.css',
+    isAprendeAjedrez: true
+  });
 });
 
 module.exports = router;
