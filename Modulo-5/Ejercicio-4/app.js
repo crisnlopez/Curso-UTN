@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 require('dotenv').config();
 
@@ -12,7 +13,8 @@ var indexRouter = require('./routes/index'); // index.js
 var aprendeAjedrezRouter = require('./routes/aprendeAjedrez'); // aprendeAjedrez.js
 var sobreMiRouter = require('./routes/sobreMi');  // sobreMi.js
 var contactoRouter = require('./routes/contacto'); // contacto.js
-
+var loginRouter = require('./routes/admin/login') // admin/login.js
+var adminRouter = require('./routes/admin/novedades'); // admin/novedadjes.js
 
 var app = express();
 
@@ -26,12 +28,34 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//---Usando Session--//
+app.use(session({
+  secret: 'zeh8NUUB2Xqpvjjr72hr',
+  resave: false,
+  saveUninitialized: true
+}))
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_usuario);
+    if (req.session.id_usuario) {
+      next();
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
+
 // //---Usando Router--//
 app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 app.use('/aprendeAjedrez', aprendeAjedrezRouter);
 app.use('/sobreMi', sobreMiRouter);
 app.use('/contacto', contactoRouter);
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 
 // catch 404 and forward to error handler
