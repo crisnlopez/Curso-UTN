@@ -1,0 +1,12 @@
+.holder {
+    width: 90%;
+    max-width: 1200px;
+}
+
+main {
+    color: black;
+}
+
+h2 {
+    color: var(--pastel);
+}

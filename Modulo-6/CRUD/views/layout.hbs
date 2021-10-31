@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Oswald:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/fontawesome-free-5.15.4-web/css/all.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/{{style}}">
+
+  <script src="javascripts/app.js" defer></script>
+  <title>Enroque.c</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <div class="logo">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="45" height="48"
+          viewBox="0 0 48 48">
+          <title>Chess_1</title>
+          <path
+            d="M14.83,21.68h5.25l1.75-4.81a.61.61,0,0,0-.57-.82H18.67V14.52h1.1a.3.3,0,0,0,.3-.3V13.09a.31.31,0,0,0-.3-.31H18.33V11.34A.31.31,0,0,0,18,11H16.89a.3.3,0,0,0-.3.3v1.44H15.15a.31.31,0,0,0-.31.31v1.13a.3.3,0,0,0,.31.3h1.09v1.53H13.65a.61.61,0,0,0-.57.82Z" />
+          <path
+            d="M28.1,27.13a25.91,25.91,0,0,1-.6,5.8H35a25.86,25.86,0,0,1-.6-5.8l1.26-.85a.19.19,0,0,0,.09-.16V22.58a.2.2,0,0,0-.2-.2h-1.4a.2.2,0,0,0-.2.2v1.59H32.76V22.58a.2.2,0,0,0-.2-.2H29.89a.2.2,0,0,0-.2.2v1.59H28.54V22.58a.2.2,0,0,0-.2-.2h-1.4a.2.2,0,0,0-.2.2v3.54a.2.2,0,0,0,.1.15Zm3.13,1a.77.77,0,0,1,.77.77v1.53H30.46V28.91h0A.76.76,0,0,1,31.23,28.14Z" />
+          <path
+            d="M36.52,34.84l-.69-.54v-.79a.19.19,0,0,0-.19-.2H26.82a.2.2,0,0,0-.2.2v.79l-.69.53a.21.21,0,0,0-.08.16v1.77a.2.2,0,0,0,.2.19H36.4a.19.19,0,0,0,.2-.19V35A.18.18,0,0,0,36.52,34.84Z" />
+          <path
+            d="M23.37,34.29l-1.12-.72V32.15a.3.3,0,0,0-.3-.3H13a.3.3,0,0,0-.31.3v1.42l-1.12.72a.33.33,0,0,0-.14.26v2.11a.31.31,0,0,0,.31.3h11.5a.31.31,0,0,0,.3-.3V34.55A.3.3,0,0,0,23.37,34.29Z" />
+          <path
+            d="M21.09,23.72a.31.31,0,0,0,.31-.31V22.36a.3.3,0,0,0-.31-.3H13.82a.29.29,0,0,0-.3.3v1.05a.3.3,0,0,0,.3.31h1.31a24.15,24.15,0,0,1-.88,7.75h6.42a23.62,23.62,0,0,1-.88-7.75Z" />
+        </svg>
+        <span class="logo-name">ENROQUE.C</span>
+      </div>
+      <ul class="menu_items">
+        <li class="{{#if isHome}}activo{{/if}}"><a href="/">Home</a></li>
+        <li class="{{#if isAprendeAjedrez}}activo{{/if}}"><a href="/aprendeAjedrez">Aprende Ajedrez</a></li>
+        <li class="{{#if isSobreMi}}activo{{/if}}"><a href="/sobreMi">Sobre Mi</a></li>
+        <li class="{{#if isContacto}}activo{{/if}}"><a href="/contacto">Contacto</a></li>
+      </ul>
+      <span class="btn-menu">
+        <i class="fas fa-bars"></i>
+      </span>
+    </nav>
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+  <footer>
+    <div class="holder">
+      <div class="agradecimientos-conteiner">
+        <h5>Agradecimientos</h5>
+        <p>Las imágenes usadas están subidas en <a href="https://unsplash.com/">Unplash</a> o en los blogs personales de
+          los autores.</p>
+        <p>
+          Agradecimientos a los autores de las fotos:
+        <ul>
+          <li class="fas fa-chess-pawn"><a href="https://unsplash.com/@tannermardis">Tanner Mardis</a></li><br>
+          <li class="fas fa-chess-pawn"><a href="https://unsplash.com/@randyfath">Randy Fath</a></li><br>
+          <li class="fas fa-chess-pawn"><a href="https://unsplash.com/@mvdheuvel">Maarten van den Heuvel</a></li><br>
+          <li class="fas fa-chess-pawn"><a href="https://nikiriga.com/">Niki Riga</a></li><br>
+          <li class="fas fa-chess-pawn">Iconos de Redes Sociales diseñados por <a
+              href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> y por <a
+              href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/"
+              title="Flaticon">www.flaticon.es</a></li>
+        </ul>
+        </p>
+      </div>
+
+      <div class="redes-conteiner">
+        <h5>Redes Sociales</h5>
+
+        <div class="redes">
+          <img src="images/iconos/facebook.svg">
+          <label>Seguime en <a href="#">Facebook</a></label>
+        </div>
+
+        <div class="redes">
+          <img src="images/iconos/gorjeo.svg">
+          <label>Seguime en <a href="#">Twitter</a></label>
+        </div>
+
+        <div class="redes">
+          <img src="images/iconos/instagram.svg">
+          <label>Seguime en <a href="#">Instagram</a></label>
+        </div>
+
+        <div class="redes">
+          <img src="images/iconos/google-plus.svg">
+          <label>Seguime en <a href="#">Google Plus+</a></label>
+        </div>
+
+        <div class="redes">
+          <img src="images/iconos/pinterest.svg">
+          <label>Seguime en <a href="#">Pinterest</a></label>
+        </div>
+      </div>
+
+      <div class="contacto-container">
+        <h5>Información Contacto</h5>
+
+        <div class="contacto">
+          <img src="images/iconos/bienes-raices.svg">
+          <label>Argentina, CABA
+          </label>
+        </div>
+
+        <div class="contacto">
+          <img src="images/iconos/whatsapp.svg">
+          <label> +54 9 11 1234-4321</label>
+        </div>
+
+        <div class="contacto">
+          <img src="images/iconos/email.svg">
+          <label> Enroque.c@hotmail.com</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="holder">
+        <div class="coypright">
+          <p>©2021 Diseñado por <a href="#">Cristian Nahuel Lopez</a></p>
+        </div>
+        <div class="informacion">
+          <p><a href="./index.html">Inicio</a> | <a href="#">Privación y Política</a> | <a href="#">Términos y
+              Condiciones</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
