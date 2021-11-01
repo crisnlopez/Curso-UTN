@@ -8,9 +8,17 @@
   {{!-- Fila 2 --}}
   <div class="row mb-2">
     <div class="col-7" style="margin-top: -9px;">
-      <h2>Listado de Novedades</h2>
+      <h2 class="text-secondary">Listado de Novedades</h2>
     </div>
-    <div class="col-5 text-end">
+    <div class="col-3 text-right">
+      <form class="d-flex">
+        <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Search" name="q" {{#if q}} value="{{q}}" {{/if}}>
+        <button class="btn btn-secondary" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+    </div>
+    <div class="col-2 text-end">
       <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fas fa-plus"></i> Nuevo</a>
     </div>
   </div>
@@ -39,6 +47,11 @@
           {{/each}}
         </tbody>
       </table>
+      {{#if is_search}}
+      {{#unless novedades.length}}
+      No se encontraron resultados para "<b>{{q}}</b>"
+      {{/unless}}
+      {{/if}}
     </div>
   </div>
   {{!-- Fin fila 3 --}}
